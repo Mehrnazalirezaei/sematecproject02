@@ -1,18 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="16dp">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="First quarter"
+        android:textColor="@color/titleColor"
+        android:layout_marginBottom="10dp"
+        />
+    <View
+        android:layout_width = "fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/titleColor"
+        android:layout_marginBottom="10dp"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="10dp"
+        android:background="#002E2424"
+        android:fadingEdge="vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:background="@color/textColor"
+            android:gravity="center_vertical"
+            android:layoutDirection="locale"
+            android:text="jan"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ax01" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#00422121"
+        android:orientation="horizontal">\n
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:background="@color/textColor"
+            android:gravity="center_vertical"
+            android:text="feb"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ax02" />
+    </LinearLayout> \n
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:background="@color/textColor"
+            android:gravity="center_vertical"
+            android:text="mar"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:src="@drawable/ax03"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second quarter"
+        android:textColor="@color/titleColor"
+        android:layout_marginBottom="10dp"
+
+        />
+    <View
+        android:layout_width = "fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/titleColor"
+        android:layout_marginBottom="10dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:background="@color/textColor"
+            android:gravity="center_vertical"
+            android:text="apr"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:src="@drawable/ax04"
+            android:scaleType="centerCrop"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:background="@color/textColor"
+            android:gravity="center_vertical"
+            android:text="may"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="10sp"
+            android:textStyle="bold"
+
+
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:src="@drawable/ax06"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+
+</LinearLayout>
